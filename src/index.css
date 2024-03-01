@@ -1,3 +1,8 @@
+:root {
+  --clr-primary: #16ff00;
+  --clr-primary-shade: #12cc00;
+}
+
 *,
 *::after,
 *::before {

@@ -1,0 +1,26 @@
+.header {
+  color: #fff;
+  height: 80vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)),
+    url("../../assets/pexels-shamia-casiano-2015097.jpg") center/cover no-repeat
+      fixed;
+}
+
+.headerText {
+  text-align: center;
+  font-size: 1.6rem;
+  width: 30%;
+  margin-right: 4rem;
+}
+
+.headerText svg {
+  font-size: 6rem;
+  color: var(--clr-primary);
+}
+
+.headerText button {
+  margin-top: 2rem;
+}
