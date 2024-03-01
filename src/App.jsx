@@ -1,10 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./Pages/HomePage";
-import { useEffect } from "react";
-import {
-  Provider,
-  RequestApiContext,
-} from "./shared/context/APIRequest-context";
+import { Provider } from "./shared/context/APIRequest-context";
 
 function App() {
   return (

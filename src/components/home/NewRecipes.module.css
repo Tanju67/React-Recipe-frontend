@@ -1,0 +1,6 @@
+.newRecipes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  row-gap: 3rem;
+}

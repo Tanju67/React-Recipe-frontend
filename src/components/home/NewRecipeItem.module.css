@@ -1,0 +1,58 @@
+.item {
+  flex: 23%;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.imgBox {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.imgBox::after {
+  content: "asas";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.imgBox:hover::after,
+.imgBox:hover.imgBox svg {
+  opacity: 1;
+  visibility: visible;
+}
+
+.imgBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imgBox svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 0.3rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  z-index: 11;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.2rem;
+}

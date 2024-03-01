@@ -8,7 +8,7 @@ function HomePage() {
   useEffect(() => {
     getRandomRecipe();
   }, []);
-  return <Home />;
+  return <Home mealList={hopePageMealList} />;
 }
 
 export default HomePage;

@@ -30,7 +30,7 @@ export const Provider = ({ children }) => {
     httpRequest(
       `https://api.spoonacular.com/recipes/random?apiKey=${
         import.meta.env.VITE_API_KEY
-      }&number=10`,
+      }&number=16`,
       (data) => {
         setHomePageMealList(data.recipes);
       }
