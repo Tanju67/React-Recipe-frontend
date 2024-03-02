@@ -1,0 +1,8 @@
+.mainNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+  background-color: #016a70;
+  height: 15vh;
+}

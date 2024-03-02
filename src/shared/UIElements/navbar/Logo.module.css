@@ -1,0 +1,20 @@
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--clr-primary);
+  font-family: "Indie Flower", cursive;
+
+  padding: 0.5rem;
+}
+
+.logo a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr-primary);
+}
+
+.logo a svg {
+  font-size: 3rem;
+}

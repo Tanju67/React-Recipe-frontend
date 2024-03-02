@@ -1,0 +1,20 @@
+.navMenu {
+  display: flex;
+  font-size: 1rem;
+  gap: 2rem;
+}
+
+.navMenu a {
+  color: #fff;
+}
+.navMenu li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navMenu li svg {
+  font-size: 3rem;
+  color: #fff;
+}
