@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import { FcSearch } from "react-icons/fc";
 import styles from "./SearchForm.module.css";
 import Button from "../Button";
@@ -9,6 +10,7 @@ function SearchForm() {
   const { getSearchRecipe, query, setQuery, page, setIsQuerySubmit } =
     useContext(RequestApiContext);
   const { filterState } = useContext(FilterRequestContext);
+  const navigate = useNavigate();
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -21,6 +23,7 @@ function SearchForm() {
       filterState.type
     );
     setIsQuerySubmit(true);
+    navigate("/main");
   };
   return (
     <form onSubmit={submitHandler} className={styles.searchForm}>
