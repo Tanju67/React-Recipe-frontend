@@ -1,6 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
 :root {
-  --clr-primary: #16ff00;
-  --clr-primary-shade: #12cc00;
+  --clr-primary: #ffe194;
+  --clr-primary-shade: #fac849;
+  --clr-secondary: #016a70;
+  --clr-secondary-shade: #024446;
 }
 
 *,
@@ -32,4 +36,25 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.error {
+  background-color: red;
+  color: #fff;
+  /* display: inline-block; */
+  padding: 1rem;
+  font-size: 1.6rem;
+  margin: 0 auto;
+  width: 50rem;
+  text-align: center;
+}
+
+.loader {
+  text-align: center;
+  font-size: 1.6rem;
+  background-color: chartreuse;
+  padding: 1rem;
+  margin: 0 auto;
+  width: 30rem;
+  text-align: center;
 }

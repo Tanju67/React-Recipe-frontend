@@ -3,11 +3,11 @@ import styles from "./Home.module.css";
 import Header from "./Header";
 import SectionNewRecipes from "./SectionNewRecipes";
 
-function Home({ mealList }) {
+function Home() {
   return (
     <div className={styles.homePage}>
       <Header />
-      <SectionNewRecipes mealList={mealList} />
+      <SectionNewRecipes />
     </div>
   );
 }

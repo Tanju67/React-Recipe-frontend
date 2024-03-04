@@ -5,7 +5,7 @@ import NewRecipeItem from "./NewRecipeItem";
 function NewRecipes({ mealList }) {
   return (
     <div className={styles.newRecipes}>
-      {mealList.map((item) => (
+      {mealList?.map((item) => (
         <NewRecipeItem
           key={item.id}
           image={item.image}

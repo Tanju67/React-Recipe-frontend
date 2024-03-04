@@ -3,12 +3,12 @@ import Home from "../components/home/Home";
 import { RequestApiContext } from "../shared/context/APIRequest-context";
 
 function HomePage() {
-  const { getRandomRecipe, hopePageMealList } = useContext(RequestApiContext);
-  console.log(hopePageMealList);
+  const { getRandomRecipe } = useContext(RequestApiContext);
+
   useEffect(() => {
     getRandomRecipe();
   }, []);
-  return <Home mealList={hopePageMealList} />;
+  return <Home />;
 }
 
 export default HomePage;

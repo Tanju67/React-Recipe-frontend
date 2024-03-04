@@ -1,0 +1,41 @@
+.searchResult {
+  padding: 5rem;
+  position: relative;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.6rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.pagination p {
+  display: flex;
+  gap: 2rem;
+  background-color: var(--clr-primary);
+  padding: 0.5rem;
+}
+
+.pagination p strong {
+  background-color: var(--clr-secondary);
+  width: 3rem;
+  display: inline-flex;
+  height: 3rem;
+  justify-content: center;
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.pagination p strong:hover {
+  background-color: var(--clr-secondary-shade);
+}
+
+.pageIndex {
+  margin: 0 0.5rem;
+}

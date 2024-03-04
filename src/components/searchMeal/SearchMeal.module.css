@@ -1,0 +1,22 @@
+.searchMeal {
+  padding-top: 0.5rem;
+  position: relative;
+}
+
+.searchMeal .svg {
+  font-size: 4rem;
+  background-color: var(--clr-primary);
+  color: #333;
+  width: 5rem;
+  height: 5rem;
+  padding: 1rem;
+  border-radius: 50%;
+  position: absolute;
+  transition: all 0.3s;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.searchMeal .svg:hover {
+  background-color: var(--clr-primary-shade);
+}
