@@ -1,0 +1,69 @@
+.mealIngr {
+  font-size: 2rem;
+  width: 80%;
+  margin: 5rem auto;
+}
+.container {
+  width: 70%;
+}
+
+.inputsBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+.view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #999;
+}
+.active {
+  background-color: var(--clr-primary);
+}
+
+.view span {
+  width: 5rem;
+  text-align: center;
+}
+
+.serving {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.serving input {
+  width: 3rem;
+  outline: none;
+  text-align: center;
+}
+
+.measure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #999;
+}
+
+.measure span {
+  width: 5rem;
+  text-align: center;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+  margin-top: 3rem;
+
+  justify-content: space-between;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}

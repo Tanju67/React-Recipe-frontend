@@ -1,0 +1,54 @@
+.item {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 1rem;
+}
+
+.img img {
+  height: 5rem;
+}
+
+.amount {
+  font-size: 1.4rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #999;
+}
+
+.list .title {
+  font-size: 1rem;
+  order: 3;
+  font-size: 1.6rem;
+}
+
+.list .img {
+  width: 10rem;
+}
+
+.list .img img {
+  width: 5rem;
+  height: auto;
+  order: 1;
+  font-size: 1.6rem;
+}
+
+.list .amount {
+  font-size: 1.4rem;
+  width: 10rem;
+  order: 2;
+  font-size: 1.6rem;
+}

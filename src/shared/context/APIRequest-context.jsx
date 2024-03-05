@@ -9,12 +9,20 @@ export const RequestApiContext = createContext({
   totalResult: 0,
   page: 1,
   isQuerySubmit: false,
+  mealInformation: [],
+  mealSummary: [],
+  mealIngredients: [],
+  mealEquipments: [],
   setIsQuerySubmit: () => {},
   setError: () => {},
   setPage: () => {},
   setQuery: () => {},
   getRandomRecipe: () => {},
   getSearchRecipe: () => {},
+  getIngredients: () => {},
+  getMealInformations: () => {},
+  getMealSummary: () => {},
+  getEquipments: () => {},
 });
 
 export const Provider = ({ children }) => {
@@ -26,6 +34,10 @@ export const Provider = ({ children }) => {
   const [query, setQuery] = useState("");
   const [page, setPage] = useState(1);
   const [isQuerySubmit, setIsQuerySubmit] = useState(false);
+  const [mealInformation, setMealInformation] = useState([]);
+  const [mealSummary, setMealSummary] = useState([]);
+  const [mealIngredients, setMealIngredients] = useState([]);
+  const [mealEquipments, setMealEquipments] = useState([]);
 
   const httpRequest = async (url, fn) => {
     try {
@@ -68,9 +80,53 @@ export const Provider = ({ children }) => {
         (page - 1) * 12
       }&cuisine=${cuisine}&diet=${diet}&type=${type}&addRecipeInformation=true`,
       (data) => {
-        console.log(data);
         setSearchMealList(data.results);
         setTotalResult(data.totalResults);
+      }
+    );
+  };
+
+  const getMealInformations = async (id) => {
+    httpRequest(
+      `https://api.spoonacular.com/recipes/${id}/information?apiKey=${
+        import.meta.env.VITE_API_KEY
+      }`,
+      (data) => {
+        setMealInformation(data);
+      }
+    );
+  };
+
+  const getMealSummary = async (id) => {
+    httpRequest(
+      `https://api.spoonacular.com/recipes/${id}/summary?apiKey=${
+        import.meta.env.VITE_API_KEY
+      }`,
+      (data) => {
+        setMealSummary(data);
+      }
+    );
+  };
+
+  const getIngredients = async (id) => {
+    httpRequest(
+      `https://api.spoonacular.com/recipes/${id}/ingredientWidget.json?apiKey=${
+        import.meta.env.VITE_API_KEY
+      }`,
+      (data) => {
+        setMealIngredients(data.ingredients);
+      }
+    );
+  };
+
+  const getEquipments = async (id) => {
+    httpRequest(
+      `https://api.spoonacular.com/recipes/${id}/equipmentWidget.json?apiKey=${
+        import.meta.env.VITE_API_KEY
+      }`,
+      (data) => {
+        console.log(data);
+        setMealEquipments(data.equipment);
       }
     );
   };
@@ -91,6 +147,14 @@ export const Provider = ({ children }) => {
         setError,
         isQuerySubmit,
         setIsQuerySubmit,
+        getIngredients,
+        getMealInformations,
+        getMealSummary,
+        getEquipments,
+        mealInformation,
+        mealSummary,
+        mealIngredients,
+        mealEquipments,
       }}
     >
       {children}

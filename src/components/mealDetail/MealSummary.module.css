@@ -1,0 +1,14 @@
+.mealSummary h3 {
+  font-size: 2rem;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.summaryText {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  background-color: #d2d2d2;
+  padding: 2rem;
+}
