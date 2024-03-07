@@ -8,12 +8,16 @@ function NavMenu() {
   return (
     <ul className={styles.navMenu}>
       <li>
-        <FaBookOpen />
-        <NavLink>MyRecipe</NavLink>
+        <NavLink>
+          <FaBookOpen />
+          <span>MyRecipe</span>
+        </NavLink>
       </li>
       <li>
-        <GiCook />
-        <NavLink>Login</NavLink>
+        <NavLink to={"/main/login"}>
+          <GiCook />
+          <span>Login</span>
+        </NavLink>
       </li>
     </ul>
   );

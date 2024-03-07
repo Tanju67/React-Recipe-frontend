@@ -10,3 +10,8 @@
 .btn:hover {
   background-color: var(--clr-primary-shade);
 }
+
+.btn:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}

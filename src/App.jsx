@@ -6,6 +6,9 @@ import MainPage from "./Pages/MainPage";
 import { FilterProvider } from "./shared/context/filterRequestContext";
 import MealDetailPage from "./Pages/MealDetailPage";
 import Footer from "./shared/UIElements/footer/Footer";
+import LoginPage from "./Pages/LoginPage";
+import RegisterPage from "./Pages/RegisterPage";
+import PageNotFound from "./Pages/PageNotFound";
 
 function App() {
   return (
@@ -17,7 +20,10 @@ function App() {
             <Route path="/main" element={<MainPage />}>
               <Route index element={<SearchMealPage />} />
               <Route path=":id" element={<MealDetailPage />} />
+              <Route path="login" element={<LoginPage />} />
+              <Route path="register" element={<RegisterPage />} />
             </Route>
+            <Route path="*" element={<PageNotFound />} />
           </Routes>
           <Footer />
         </BrowserRouter>

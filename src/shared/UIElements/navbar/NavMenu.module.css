@@ -7,7 +7,7 @@
 .navMenu a {
   color: #fff;
 }
-.navMenu li {
+.navMenu li a {
   display: flex;
   flex-direction: column;
   justify-content: center;
