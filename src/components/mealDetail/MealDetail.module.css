@@ -19,3 +19,31 @@
     url("../../assets/pexels-vincent-ma-janssen-1310777.jpg") center/cover
       no-repeat fixed;
 }
+
+.icon {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background-color: #fff;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.icon svg {
+  font-size: 3rem;
+  color: red;
+  transition: all 0.3s;
+}
+
+.icon:hover {
+  background-color: red;
+}
+
+.icon:hover.icon svg {
+  color: #fff;
+}

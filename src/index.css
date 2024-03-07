@@ -58,3 +58,10 @@ a {
   width: 30rem;
   text-align: center;
 }
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
