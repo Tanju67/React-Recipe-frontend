@@ -1,0 +1,25 @@
+.item {
+}
+
+.item p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.number {
+  background-color: #fff;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step {
+  flex: 1;
+}

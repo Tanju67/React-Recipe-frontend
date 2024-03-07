@@ -1,0 +1,12 @@
+.item {
+  font-size: 1.4rem;
+}
+
+.item a {
+  color: #333;
+  transition: all 0.3s;
+}
+
+.item a:hover {
+  color: salmon;
+}

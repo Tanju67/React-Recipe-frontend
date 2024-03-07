@@ -5,14 +5,22 @@ import { RequestApiContext } from "../shared/context/APIRequest-context";
 
 function MealDetailPage() {
   const mealId = useParams().id;
-  const { getIngredients, getMealInformations, getMealSummary, getEquipments } =
-    useContext(RequestApiContext);
+  const {
+    getIngredients,
+    getMealInformations,
+    getMealSummary,
+    getEquipments,
+    getInstructions,
+    getSmilarRecipes,
+  } = useContext(RequestApiContext);
   useEffect(() => {
     getIngredients(mealId);
     getMealSummary(mealId);
     getMealInformations(mealId);
     getEquipments(mealId);
-  }, []);
+    getInstructions(mealId);
+    getSmilarRecipes(mealId);
+  }, [mealId]);
 
   return <MealDetail />;
 }

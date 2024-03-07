@@ -5,6 +5,7 @@ import SearchMealPage from "./Pages/SearchMealPage";
 import MainPage from "./Pages/MainPage";
 import { FilterProvider } from "./shared/context/filterRequestContext";
 import MealDetailPage from "./Pages/MealDetailPage";
+import Footer from "./shared/UIElements/footer/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
               <Route path=":id" element={<MealDetailPage />} />
             </Route>
           </Routes>
+          <Footer />
         </BrowserRouter>
       </FilterProvider>
     </Provider>

@@ -6,6 +6,8 @@ import MealSummary from "./MealSummary";
 import MealIngredients from "./MealIngredients";
 import { RequestApiContext } from "../../shared/context/APIRequest-context";
 import MealEquipment from "./MealEquipment";
+import MealInstructions from "./MealInstructions";
+import MealSimilar from "./MealSimilar";
 
 function MealDetail() {
   const { mealInformation } = useContext(RequestApiContext);
@@ -17,6 +19,8 @@ function MealDetail() {
       <MealSummary />
       <MealIngredients />
       <MealEquipment />
+      <MealInstructions />
+      <MealSimilar />
     </div>
   );
 }

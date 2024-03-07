@@ -1,0 +1,21 @@
+.footer {
+  background-color: var(--clr-secondary);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.4rem;
+  padding: 4rem;
+}
+
+.nav a {
+  color: #fff;
+}
+
+.icon {
+  color: #fff;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}

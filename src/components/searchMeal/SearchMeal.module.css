@@ -1,6 +1,7 @@
 .searchMeal {
   padding-top: 0.5rem;
   position: relative;
+  height: 170vh;
 }
 
 .searchMeal .svg {

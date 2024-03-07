@@ -13,6 +13,8 @@ export const RequestApiContext = createContext({
   mealSummary: [],
   mealIngredients: [],
   mealEquipments: [],
+  mealInstructions: [],
+  mealSmilar: [],
   setIsQuerySubmit: () => {},
   setError: () => {},
   setPage: () => {},
@@ -23,6 +25,8 @@ export const RequestApiContext = createContext({
   getMealInformations: () => {},
   getMealSummary: () => {},
   getEquipments: () => {},
+  getInstructions: () => {},
+  getSmilarRecipes: () => {},
 });
 
 export const Provider = ({ children }) => {
@@ -38,6 +42,8 @@ export const Provider = ({ children }) => {
   const [mealSummary, setMealSummary] = useState([]);
   const [mealIngredients, setMealIngredients] = useState([]);
   const [mealEquipments, setMealEquipments] = useState([]);
+  const [mealInstructions, setMealInstructions] = useState([]);
+  const [mealSmilar, setMealSmilar] = useState([]);
 
   const httpRequest = async (url, fn) => {
     try {
@@ -125,8 +131,29 @@ export const Provider = ({ children }) => {
         import.meta.env.VITE_API_KEY
       }`,
       (data) => {
-        console.log(data);
         setMealEquipments(data.equipment);
+      }
+    );
+  };
+
+  const getInstructions = async (id) => {
+    httpRequest(
+      `https://api.spoonacular.com/recipes/${id}/analyzedInstructions?apiKey=${
+        import.meta.env.VITE_API_KEY
+      }`,
+      (data) => {
+        setMealInstructions(data[0].steps);
+      }
+    );
+  };
+
+  const getSmilarRecipes = async (id) => {
+    httpRequest(
+      `https://api.spoonacular.com/recipes/${id}/similar?apiKey=${
+        import.meta.env.VITE_API_KEY
+      }`,
+      (data) => {
+        setMealSmilar(data);
       }
     );
   };
@@ -151,10 +178,14 @@ export const Provider = ({ children }) => {
         getMealInformations,
         getMealSummary,
         getEquipments,
+        getInstructions,
+        getSmilarRecipes,
         mealInformation,
         mealSummary,
         mealIngredients,
         mealEquipments,
+        mealInstructions,
+        mealSmilar,
       }}
     >
       {children}
