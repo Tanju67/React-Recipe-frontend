@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 function NewRecipeItem({ image, id, title }) {
   return (
     <Card className={styles.item}>
-      <Link to={`/main/${id}`}>
+      <Link to={`/main/detail/${id}`}>
         <div className={styles.imgBox}>
           <img src={image} alt={title} />
           <TbHandClick />

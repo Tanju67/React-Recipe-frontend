@@ -24,6 +24,13 @@
   position: absolute;
   top: 2rem;
   right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon div {
   background-color: #fff;
   width: 5rem;
   height: 5rem;
@@ -34,16 +41,20 @@
   transition: all 0.3s;
 }
 
+.icon p {
+  color: #fff;
+}
+
 .icon svg {
   font-size: 3rem;
   color: red;
   transition: all 0.3s;
 }
 
-.icon:hover {
+.icon div:hover {
   background-color: red;
 }
 
-.icon:hover.icon svg {
+.icon div:hover svg {
   color: #fff;
 }

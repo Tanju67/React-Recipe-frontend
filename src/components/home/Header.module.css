@@ -24,3 +24,18 @@
 .headerText button {
   margin-top: 2rem;
 }
+
+@media only screen and (max-width: 850px) {
+  .headerText {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    height: 100vh;
+  }
+  .headerText {
+    width: 50%;
+  }
+}

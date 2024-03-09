@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import styles from "./Register.module.css";
 import Card from "../../shared/UIElements/Card";
 import Input from "../../shared/formElements/Input";
@@ -7,10 +7,11 @@ import {
   VALIDATOR_MINLENGTH,
   VALIDATOR_REQUIRE,
 } from "../../shared/utils/validators";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Button from "../../shared/UIElements/Button";
 import { useForm } from "../../shared/hooks/form-hook";
 import registerImg from "../../assets/pexels-andrea-piacquadio-821054.jpg";
+import { AuthContext } from "../../shared/context/auth-context";
 
 function Register() {
   const [inputHandler, formState] = useForm({
@@ -19,9 +20,23 @@ function Register() {
     isValid: false,
   });
 
+  const navigate = useNavigate();
+  const { sendAuthRequest } = useContext(AuthContext);
+
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log(formState);
+    sendAuthRequest(
+      "auth/register",
+      {
+        name: formState.name.value,
+        email: formState.email.value,
+        password: formState.password.value,
+      },
+      { "Content-Type": "application/json" },
+      () => {
+        navigate("/main/login");
+      }
+    );
   };
   return (
     <div className={styles.registerPage}>
@@ -59,7 +74,7 @@ function Register() {
             validators={[VALIDATOR_MINLENGTH(6)]}
           />
           <Button disabled={!formState.isValid} type="submit">
-            Login
+            Register
           </Button>
           <p>
             Do You already have an account?

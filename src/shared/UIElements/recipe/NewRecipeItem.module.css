@@ -2,6 +2,7 @@
   flex: 23%;
   padding: 1rem;
   background-color: #fff;
+  max-width: 25%;
 }
 
 .imgBox {
@@ -55,4 +56,25 @@
 .title {
   text-align: center;
   font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .item {
+    flex: 31%;
+    max-width: 33%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .item {
+    flex: 49%;
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .item {
+    flex: 99%;
+    max-width: 100%;
+  }
 }
