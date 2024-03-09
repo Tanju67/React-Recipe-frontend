@@ -6,6 +6,7 @@
   gap: 2rem;
   position: relative;
   top: -20vh;
+  margin-bottom: -10rem;
 }
 
 .imgBox {
@@ -23,7 +24,6 @@
 .iconBox {
   width: 50%;
   display: flex;
-  gap: 4rem;
   justify-content: center;
   align-items: center;
   font-size: 1.6rem;
@@ -34,4 +34,32 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  width: 20%;
+}
+
+.icon span {
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .imgBox {
+    padding: 1rem;
+    width: 70%;
+    background-color: #fff;
+  }
+  .iconBox {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .imgBox {
+    padding: 1rem;
+    width: 90%;
+    background-color: #fff;
+  }
+  .iconBox {
+    width: 90%;
+  }
 }

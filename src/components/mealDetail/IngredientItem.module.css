@@ -18,6 +18,18 @@
   font-size: 1.4rem;
 }
 
+@media only screen and (max-width: 800px) {
+  .item {
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .item {
+    width: 25%;
+  }
+}
+
 .list {
   display: flex;
   flex-direction: row;

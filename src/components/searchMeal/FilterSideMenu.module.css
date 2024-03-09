@@ -50,3 +50,21 @@
 .clsBtn:hover {
   background-color: var(--clr-primary-shade);
 }
+
+@media only screen and (max-width: 1050px) {
+  .visible {
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .visible {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .visible {
+    width: 50%;
+  }
+}

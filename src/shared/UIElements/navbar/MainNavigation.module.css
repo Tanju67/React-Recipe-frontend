@@ -6,3 +6,9 @@
   background-color: #016a70;
   height: 15vh;
 }
+
+@media only screen and (max-width: 600px) {
+  .mainNav {
+    padding: 0 1rem;
+  }
+}

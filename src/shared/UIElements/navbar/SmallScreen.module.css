@@ -1,0 +1,43 @@
+.navMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.navMenu a {
+  color: #fff;
+  font-size: 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.clsBtn {
+  color: #fff;
+  font-size: 3rem;
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
+  transition: all 0.3s;
+}
+
+.clsBtn:hover {
+  transform: rotate(180deg);
+}
+.navMenu li {
+  padding: 0 1rem;
+  transition: all 0.3s;
+}
+
+.navMenu li:hover {
+  background-color: #000;
+}

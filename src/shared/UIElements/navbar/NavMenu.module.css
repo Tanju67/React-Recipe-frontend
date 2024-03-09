@@ -18,3 +18,18 @@
   font-size: 3rem;
   color: #fff;
 }
+
+.menuIcon svg {
+  font-size: 3rem;
+  color: #fff;
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .navMenu {
+    display: none;
+  }
+  .menuIcon svg {
+    display: block;
+  }
+}
