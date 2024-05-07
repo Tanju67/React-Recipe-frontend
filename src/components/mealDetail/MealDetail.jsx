@@ -48,7 +48,8 @@ function MealDetail() {
     } else {
       const token = localStorage.getItem("token");
       sendRequest(
-        `http://localhost:5000/api/v1/recipe/${mealInformation.id}`,
+        import.meta.env.VITE_BACKEND_URL +
+          `/api/v1/recipe/${mealInformation.id}`,
         "DELETE",
         undefined,
         undefined,
