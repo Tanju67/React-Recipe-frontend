@@ -64,3 +64,9 @@
   order: 2;
   font-size: 1.6rem;
 }
+
+@media only screen and (max-width: 500px) {
+  .list .title {
+    width: 10rem;
+  }
+}

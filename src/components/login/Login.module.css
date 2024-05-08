@@ -30,4 +30,35 @@
 
 .imgBox img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .loginPage {
+    padding: 6rem 3rem;
+  }
 }
