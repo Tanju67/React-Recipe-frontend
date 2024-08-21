@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./NotFound.module.css";
 import MainNavigation from "../../shared/UIElements/navbar/MainNavigation";
 import { TbError404 } from "react-icons/tb";

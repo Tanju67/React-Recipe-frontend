@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./EquipmentItem.module.css";
 
 function EquipmentItem({ list, image, title }) {

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import styles from "./SearchResult.module.css";
 import NewRecipes from "../../shared/UIElements/recipe/NewRecipes";
 import { RequestApiContext } from "../../shared/context/APIRequest-context";

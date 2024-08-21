@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./MainNavigation.module.css";
 import Logo from "./Logo";
 import SearchForm from "./SearchForm";

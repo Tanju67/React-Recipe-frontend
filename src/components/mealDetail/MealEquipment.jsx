@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import styles from "./MealEquipment.module.css";
 import { RequestApiContext } from "../../shared/context/APIRequest-context";
 import EquipmentItem from "./EquipmentItem";

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import vegetarian from "../../assets/vegetarian.svg";
 import vegan from "../../assets/vegan.svg";
 import glutenFree from "../../assets/glutenFree.svg";

@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./MyRecipe.module.css";
 import NewRecipes from "../../shared/UIElements/recipe/NewRecipes";
 

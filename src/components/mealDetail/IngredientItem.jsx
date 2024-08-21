@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./IngredientItem.module.css";
 
 function IngredientItem({ image, amount, title, measure, serving, list }) {

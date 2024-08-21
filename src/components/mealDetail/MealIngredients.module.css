@@ -18,7 +18,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  cursor: pointer;
   background-color: #999;
 }
 .active {
@@ -45,13 +45,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  cursor: pointer;
   background-color: #999;
 }
 
 .measure span {
   width: 5rem;
   text-align: center;
+  cursor: pointer;
 }
 
 .items {
@@ -59,7 +60,6 @@
   flex-wrap: wrap;
   row-gap: 2rem;
   margin-top: 3rem;
-
   justify-content: space-between;
 }
 

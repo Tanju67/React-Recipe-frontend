@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./NewRecipes.module.css";
 import NewRecipeItem from "./NewRecipeItem";
 

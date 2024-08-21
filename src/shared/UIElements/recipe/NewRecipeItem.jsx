@@ -1,4 +1,3 @@
-import React from "react";
 import { TbHandClick } from "react-icons/tb";
 import styles from "./NewRecipeItem.module.css";
 import Card from "../Card";

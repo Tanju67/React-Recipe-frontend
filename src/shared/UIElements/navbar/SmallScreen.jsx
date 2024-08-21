@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./SmallScreen.module.css";
 import { NavLink } from "react-router-dom";
 import { FaBookOpen } from "react-icons/fa6";

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import styles from "./MealSummary.module.css";
 import parse from "html-react-parser";
 import { RequestApiContext } from "../../shared/context/APIRequest-context";

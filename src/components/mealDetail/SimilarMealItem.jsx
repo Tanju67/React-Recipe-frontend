@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./SimilarMealItem.module.css";
 import { Link } from "react-router-dom";
 

@@ -1,6 +1,5 @@
-import React, { useContext, useState } from "react";
+import { useContext } from "react";
 import styles from "./MealDetail.module.css";
-
 import MealImg from "./MealImg";
 import MealSummary from "./MealSummary";
 import MealIngredients from "./MealIngredients";

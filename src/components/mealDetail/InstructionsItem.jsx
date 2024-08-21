@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./InstructionsItem.module.css";
 
 function InstructionsItem({ number, step }) {

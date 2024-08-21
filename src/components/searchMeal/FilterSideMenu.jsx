@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useReducer } from "react";
+import { useContext, useEffect } from "react";
 import { FaKitchenSet } from "react-icons/fa6";
 import { LuVegan } from "react-icons/lu";
 import { GiMeal } from "react-icons/gi";

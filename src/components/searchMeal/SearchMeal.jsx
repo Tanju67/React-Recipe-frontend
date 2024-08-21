@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { IoFilter } from "react-icons/io5";
 import styles from "./SearchMeal.module.css";
 import FilterSideMenu from "./FilterSideMenu";

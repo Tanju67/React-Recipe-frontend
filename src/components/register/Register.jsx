@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import styles from "./Register.module.css";
 import Card from "../../shared/UIElements/Card";
 import Input from "../../shared/formElements/Input";

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import styles from "./MealSimilar.module.css";
 import { RequestApiContext } from "../../shared/context/APIRequest-context";
 import SimilarMealItem from "./SimilarMealItem";

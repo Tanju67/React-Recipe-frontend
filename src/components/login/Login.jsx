@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import styles from "./Login.module.css";
 import Card from "../../shared/UIElements/Card";
 import Button from "../../shared/UIElements/Button";
@@ -14,9 +14,9 @@ import { AuthContext } from "../../shared/context/auth-context";
 
 function Login() {
   const [inputHandler, formState] = useForm({
-    email: { value: "", isValid: false },
-    password: { value: "", isValid: false },
-    isValid: false,
+    email: { value: "test@mail.com", isValid: true },
+    password: { value: "secret123", isValid: true },
+    isValid: true,
   });
 
   const navigate = useNavigate();
@@ -32,7 +32,6 @@ function Login() {
       },
       { "Content-Type": "application/json" },
       (data) => {
-        console.log(data);
         onLogin(data.user.token, { name: data.user.name, id: data.user.id });
         navigate("/");
       }
@@ -52,6 +51,8 @@ function Login() {
             errorMsg="Please enter a valid email!"
             onInput={inputHandler}
             validators={[VALIDATOR_EMAIL()]}
+            value={formState.email.value}
+            valid={formState.email.isValid}
           />
           <Input
             id="password"
@@ -62,6 +63,8 @@ function Login() {
             errorMsg="Please enter a valid password!"
             onInput={inputHandler}
             validators={[VALIDATOR_MINLENGTH(6)]}
+            value={formState.password.value}
+            valid={formState.password.isValid}
           />
           <Button disabled={!formState.isValid} type="submit">
             Login
